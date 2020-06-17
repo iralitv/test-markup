@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Window</title>
+  <link rel="icon" type="image/png" href="./src/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="inner-container header__container">
+    <div class="header__company company">
+      <img src="./src/img/logo.svg" alt="" width="100" height="100" class="company__logo">
+      <div class="company__wrapper">
+        <h1 class="company__title">Название компании</h1>
+        <p class="company__subtitle">самая клевая компания</p>
+      </div>
+    </div>
+    <div class="header__phone phone">
+      <a href="tel:+74997777777" class="phone__item">+7(499) 777-77-77</a>
+      <a href="tel:+74997777777" class="phone__item">+7(499) 777-77-77</a>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <section class="phone-send" >
+    <div class="inner-container">
+      <div class="phone-send__container">
+        <h2 class="phone-send__title title">форма с кнопкой</h2>
+        <form action="" method="post" class="phone-send__form form-phone" id="form-id">
+          <p class="form-phone__info title">оставь телефон и получи <br>что-то офигенное</p>
+          <input type="tel" class="form-phone__number" placeholder="Введите номер" required>
+          <button type="submit" class="form-phone__btn btn">получить</button>
+        </form>
+      </div>
+      <div class="modal" id="modal-id">
+        <div class="modal__content">
+          <h3 class="modal__title">Сообщение отправлено</h3>
+          <button type="button" class="modal__close form-phone__btn">Ok</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slider">
+    <h2 class="slider__title title">Тут у нас слайдер</h2>
+    <div class="slider__body slides">
+      <article class="slides__item slide">
+        <img src="./src/img/slide_1.png" alt="" class="slide__img">
+      </article>
+      <article class="slides__item slide">
+        <img src="./src/img/slide_2.png" alt="" class="slide__img">
+      </article>
+      <article class="slides__item slide">
+        <img src="./src/img/slide_3.png" alt="" class="slide__img">
+      </article>
+    </div>
+    <div class="slider__dots dots">
+      <span class="dots__item dots__item--active"></span>
+      <span class="dots__item"></span>
+      <span class="dots__item"></span>
+    </div>
+  </section>
+  <section class="content">
+    <div class="inner-container">
+      <h2 class="content__title title">просто текстовый блок</h2>
+      <p class="content__text">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Nullam posuere quis arcu sit amet commodo.
+        Nullam ac dui lacus. Nulla dapibus interdum interdum.
+        Curabitur ut diam nisl. Vivamus libero lacus, viverra at
+        dolor sit amet, commodo faucibus orci. Vivamus laoreet ornare
+        nisi, id pharetra tellus ullamcorper volutpat. Sed lacinia
+        placerat accumsan. Praesent pharetra ipsum scelerisque, sodales
+        urna ut, placerat nulla. Duis nunc urna, semper non arcu ut,
+        sagittis dapibus lorem. Nunc nec urna id velit sodales sodales.
+        Sed porttitor quam eget mollis consequat. Curabitur aliquet nec
+        dui eget aliquet. Nulla in risus ante.</p>
+    </div>
+  </section>
+  <section class="calc">
+    <div class="inner-container">
+      <h2 class="calc__title title">Калькулятор<br>
+        (стоимость пользователь узнает по телефону)</h2>
+      <section class="calc__window windows">
+        <article class="windows__item window window--active">
+          <img src="./src/img/window_1.png" alt="" class="window__img">
+          <p class="window__title">Одностворчатое</p>
+        </article>
+        <article class="windows__item window">
+          <img src="./src/img/window_2.png" alt="" class="window__img">
+          <p class="window__title">Двухстворчатое</p>
+        </article>
+        <article class="windows__item window">
+          <img src="./src/img/window_3.png" alt="" class="window__img">
+          <p class="window__title">Трехстворчатое</p>
+        </article>
+        <article class="windows__item window">
+          <img src="./src/img/window_4.png" alt="" class="window__img">
+          <p class="window__title">Балконный блок</p>
+        </article>
+        <article class="windows__item window">
+          <img src="./src/img/window_5.png" alt="" class="window__img">
+          <p class="window__title">Остекление балкона</p>
+        </article>
+      </section>
+
+      <form action="" class="calc__form form-calc">
+        <div class="form-calc__wrapper">
+          <section class="form-calc__size size">
+            <img src="./src/img/window_1.png" alt="" class="size__img">
+            <div class="size__wrapper">
+              <div class="size__number number">
+                <label for="" class="number__label">ширина, см</label>
+                <input type="text" class="number__input" placeholder="120">
+              </div>
+              <p class="size__cross">x</p>
+              <div class="size__number number">
+                <label for="" class="number__label">высота, см</label>
+                <input type="text" class="number__input" placeholder="120">
+              </div>
+            </div>
+          </section>
+          <section class="form-calc__feature feature">
+            <h3 class="feature__title">Одностворчатое окно KBE</h3>
+            <p class="tool__title feature__subtitle">1. Критерий выбора </p>
+            <div role="group" class="feature__tool tool">
+              <input type="radio" id="tool1" name="tool" class="tool__input" checked>
+              <label for="tool1" class="tool__label">пункт выбора 1</label>
+              <input type="radio" id="tool2" name="tool" class="tool__input">
+              <label for="tool2" class="tool__label">пункт выбора 2</label>
+              <input type="radio" id="tool3" name="tool" class="tool__input">
+              <label for="tool3" class="tool__label">пункт выбора 3</label>
+            </div>
+            <p class="flap__title feature__subtitle">2. Выберите открывание створки</p>
+            <div role="group" class="feature__flap flap">
+              <select name="flap" id="" class="flap__select select">
+                <option value="not-open" class="select__option">Не открывается</option>
+                <option value="open" class="select__option">Открывается</option>
+              </select>
+              <div class="select__arrow"></div>
+            </div>
+          </section>
+        </div>
+        <div class="form-calc__send send">
+          <div class="send__wrapper">
+            <img src="./src/img/user.svg" alt="" class="send__icon">
+            <input type="tel" class="send__phone" placeholder="Введите номер">
+          </div>
+          <button class="send__btn btn">Рассчитать</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="inner-container">
+    <p class="footer__text">просто<br> скромный футер</p>
+  </div>
+</footer>
+<script src="dist/bundle.js"></script>
+</body>
+</html>

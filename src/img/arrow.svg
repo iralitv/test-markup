@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 24" width="31" height="24">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #aeaeae } 
+	</style>
+	<g id="f5">
+		<g id="выбор 2">
+			<path id="Фигура 8" class="shp0" d="M1.99 1.13L15.5 1L29.01 1.13L15.5 22.01L1.99 1.13Z" />
+		</g>
+	</g>
+</svg>
